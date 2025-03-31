@@ -1,0 +1,139 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('images/bgd.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background: rgb(75, 20, 20); /* Dark red for container */
+    padding: 20px;
+    border-radius: 10px;
+    /* Corrected box-shadow with white color */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 255); /* Adjust alpha for desired intensity */
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    color: white;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background: black; /* Background for tab buttons */
+    color: #fff; /* White text color */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.tab-button:hover {
+    background: darkblue; /* Hover effect */
+}
+
+.tab-button.active {
+    background: darkblue; /* Active state */
+}
+
+.tab-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 14px;
+    color: white; /* Label color */
+}
+
+textarea, input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #444; /* Darker background for inputs for better contrast */
+    color: white; /* White text for inputs */
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* White text color for buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.encrypt-btn {
+    background: black; /* Dark background for encrypt button */
+}
+
+.encrypt-btn:hover {
+    background: #005f00; /* Dark green hover effect */
+}
+
+.decrypt-btn {
+    background: black; /* Dark background for decrypt button */
+}
+
+.decrypt-btn:hover {
+    background: red; /* Red hover effect */
+}
+
+button:hover {
+    opacity: 0.8; /* Slight opacity change for hover effect */
+}
+
+.results {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.results p {
+    font-size: 14px;
+    color: white; /* Results text color */
+}
+
+iframe {
+    border-radius: 5px;
+}
+
+.discussion-topic {
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: justify;
+    color: white; /* Text color for discussion topics */
+}

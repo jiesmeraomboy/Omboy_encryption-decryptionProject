@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ytac_CompuSkill</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encryption & Decryption Methods</h1>
+        
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab('encrypt-decrypt')">Encrypt/Decrypt</button>
+            <button class="tab-button" onclick="openTab('videos')">Videos</button>
+            <button class="tab-button" onclick="openTab('discussion')">Discussion</button>
+        </div>
+
+        <div id="encrypt-decrypt" class="tab-content active">
+            <label for="textInput">Enter Text:</label>
+            <textarea id="textInput" placeholder="Type here..."></textarea>
+            
+            <label for="shiftValue">Shift Value:</label>
+            <input type="number" id="shiftValue" min="1" max="25" placeholder="1-25">
+            
+            <div class="buttons">
+                <button class="encrypt-btn" onclick="encrypt()">Encrypt</button>
+                <button class="decrypt-btn" onclick="decrypt()">Decrypt</button>
+            </div>
+            
+            <div class="results">
+                <p><strong>Encrypted Text:</strong> <span id="encryptedText"></span></p>
+                <p><strong>Decrypted Text:</strong> <span id="decryptedText"></span></p>
+            </div>
+        </div>
+
+        <div id="videos" class="tab-content">
+            <h2>Videos on Encryption</h2>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/AQDCe585Lnc" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZghMPWGXexs" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div id="discussion" class="tab-content">
+            <h2>Discussion Board</h2>
+        
+            <div class="discussion-topic">
+                <h3>Why is encryption important?</h3>
+                <p>
+                    Encryption is one of the most helpful, first-level layers to protecting your data and staying cyber resilient (Genetic, 2020).  
+                    Data encryption is important because it helps protect people’s privacy and secures data from attackers and other cybersecurity threats.  
+                    Encryption is often mandatory from a regulatory perspective for organizations such as in healthcare, education, finance and banking, and retail (Google Cloud, 2022).
+                </p>
+            </div>
+        
+            <div class="discussion-topic">
+                <h3>Can encryption be misused?</h3>
+                <p>
+                    Encryption, while intended for data protection, can be misused by cybercriminals for nefarious purposes, such as ransomware attacks, hiding illicit activities, and exploiting vulnerabilities in encryption protocols.
+                </p>
+                <p>
+                    According to Flagright, encryption, while a formidable tool for protection, also presents a paradox. Its very strength that ensures data privacy and security in the hands of legitimate users can be twisted to cloak illicit activities when used with malevolent intent.  
+                    As the digital realm evolves, the misuse of encryption in fraudulent activities continues to challenge the status quo, demanding innovation and vigilance from those tasked with maintaining digital safety and integrity (Flagright, 2021).
+                </p>
+                <p>
+                    For instance, ransomware attacks have become a major concern. In 2021, the Colonial Pipeline attack disrupted fuel supply across the U.S. East Coast after hackers encrypted critical systems and demanded ransom in cryptocurrency (CISA, 2021).  
+                    Similarly, encryption enables dark web transactions, where criminals use encrypted communication to trade illegal goods, such as drugs and weapons, without detection (Europol, 2021).  
+                    Moreover, terrorist organizations have exploited encrypted messaging apps to coordinate attacks while evading law enforcement surveillance (Nakashima, 2016).
+                </p>
+            </div>
+        
+            <div class="discussion-topic">
+                <h3>Ethical concerns about encryption</h3>
+                <p>According to Irina Raicu in 2016:</p>
+                <ul>
+                    <li><strong>Utilitarian Perspective:</strong> Encryption protects personal data but can hinder criminal investigations, affecting public safety (Raicu, 2014).</li>
+                    <li><strong>Rights Perspective:</strong> It upholds privacy as a fundamental right, yet raises concerns about security and public welfare (Raicu, 2014).</li>
+                    <li><strong>Fairness Perspective:</strong> While encryption protects activists, its accessibility is uneven, benefiting tech-savvy users more (Raicu, 2014).</li>
+                    <li><strong>Common Good Perspective:</strong> Encryption secures online environments but may limit governmental transparency (Raicu, 2014).</li>
+                    <li><strong>Virtue Perspective:</strong> It fosters autonomy and integrity but could reduce prudence and accountability in digital spaces (Raicu, 2014).</li>
+                </ul>
+            </div>
+        </div>
+        
+
+
+    <script src="index.js"></script>
+</body>
+</html>
